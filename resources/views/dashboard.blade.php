@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - AdminLTE Style</title>
+    <title>Dashboard - AdminLTE 4 Style</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -97,7 +97,7 @@
                     <div class="text-xs text-gray-400">Home / <span class="text-gray-200">Dashboard</span></div>
                 </div>
 
-                <!-- 4 Colored Info Boxes -->
+                <!-- 4 Colored Info Boxes --><!-- 4 Colored Info Boxes --><!-- 4 Colored Info Boxes --><!-- 4 Colored Info Boxes -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                     <!-- New Orders -->
                     <div class="bg-blue-600 rounded-lg p-4 text-white relative overflow-hidden shadow-lg">
@@ -107,7 +107,7 @@
                         <a href="#" class="block text-xs text-center bg-black/20 hover:bg-black/30 py-1.5 mt-4 -mx-4 -mb-4 transition">More info <i class="fa-solid fa-circle-arrow-right ml-1"></i></a>
                     </div>
 
-                    <!-- Bounce Rate -->
+                    <!-- Bounce Rate --><!-- Bounce Rate --><!-- Bounce Rate --><!-- Bounce Rate --><!-- Bounce Rate -->
                     <div class="bg-emerald-600 rounded-lg p-4 text-white relative overflow-hidden shadow-lg">
                         <div class="text-3xl font-bold">53<span class="text-xl">%</span></div>
                         <div class="text-sm font-medium mt-1">Bounce Rate</div>
@@ -144,7 +144,7 @@
         </div>
     </div>
 
-    <!-- Chart Script -->
+    <!-- Chart Script --><!-- Chart Script --><!-- Chart Script --><!-- Chart Script --><!-- Chart Script -->
     <script>
         const ctx = document.getElementById('salesChart').getContext('2d');
         new Chart(ctx, {
