@@ -1,0 +1,28 @@
+
+/* Menyamakan style AdminLTE v4 */
+.content-wrapper, .main-sidebar, .main-header {
+    background-color: #0f172a !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #1e3a8a !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+}
+
+.nav-sidebar .nav-item .nav-link {
+    border-radius: 8px !important;
+    margin-bottom: 4px;
+}
+
+.card {
+    background-color: #1e293b !important;
+    border: 1px solid #334155 !important;
+    border-radius: 12px !important;
+}
+
+.small-box {
+    border-radius: 12px !important;
+    box-shadow: none !important;
+}
+

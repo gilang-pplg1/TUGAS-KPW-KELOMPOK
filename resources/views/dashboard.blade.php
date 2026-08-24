@@ -23,18 +23,31 @@
 
                 <!-- Navigation -->
                 <nav class="p-4 space-y-1 text-sm font-medium">
-                    <a href="#" class="flex items-center space-x-3 bg-blue-600/20 text-blue-400 px-4 py-3 rounded-lg border-l-4 border-blue-500">
+                    <!-- Menu Dashboard -->
+                    <a href="{{ url('/dashboard') }}" class="flex items-center space-x-3 bg-blue-600/20 text-blue-400 px-4 py-3 rounded-lg border-l-4 border-blue-500">
                         <i class="fa-solid me-2 fa-gauge w-5"></i>
                         <span>Dashboard</span>
                     </a>
+                    
+                    <!-- Menu Widgets -->
                     <a href="#" class="flex items-center space-x-3 text-gray-400 hover:bg-gray-800 hover:text-white px-4 py-3 rounded-lg transition">
                         <i class="fa-solid fa-layer-group w-5"></i>
                         <span>Widgets</span>
                     </a>
-                    <a href="#" class="flex items-center space-x-3 text-gray-400 hover:bg-gray-800 hover:text-white px-4 py-3 rounded-lg transition">
+
+                    <!-- Menu Pengguna / Users -->
+                    <a href="{{ route('users.index') }}" class="flex items-center space-x-3 text-gray-400 hover:bg-gray-800 hover:text-white px-4 py-3 rounded-lg transition">
                         <i class="fa-solid fa-users w-5"></i>
                         <span>Pengguna</span>
                     </a>
+
+                    <!-- Menu Profil Saya -->
+                    <a href="#" class="flex items-center space-x-3 text-gray-400 hover:bg-gray-800 hover:text-white px-4 py-3 rounded-lg transition">
+                        <i class="fa-solid fa-user w-5"></i>
+                        <span>Profil Saya</span>
+                    </a>
+
+                    <!-- Menu Laporan -->
                     <a href="#" class="flex items-center space-x-3 text-gray-400 hover:bg-gray-800 hover:text-white px-4 py-3 rounded-lg transition">
                         <i class="fa-solid fa-chart-pie w-5"></i>
                         <span>Laporan</span>
@@ -67,7 +80,7 @@
                 <!-- User Profile Dynamic -->
                 <div class="flex items-center space-x-3">
                     <div class="w-9 h-9 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm uppercase">
-                        {{ substr(Auth::user()->name ?? 'A', 0, 1) }}
+                        {{ strtoupper(substr(Auth::user()->name ?? 'A', 0, 1)) }}
                     </div>
                     <span class="text-sm font-medium text-gray-200">
                         {{ Auth::user()->name ?? 'Alexander Pierce' }}
@@ -107,7 +120,7 @@
                         <div class="text-3xl font-bold">44</div>
                         <div class="text-sm font-medium mt-1">User Registrations</div>
                         <i class="fa-solid fa-user-plus absolute right-3 bottom-8 text-5xl opacity-20"></i>
-                        <a href="#" class="block text-xs text-center bg-black/20 hover:bg-black/30 py-1.5 mt-4 -mx-4 -mb-4 transition">More info <i class="fa-solid fa-circle-arrow-right ml-1"></i></a>
+                        <a href="{{ route('users.index') }}" class="block text-xs text-center bg-black/20 hover:bg-black/30 py-1.5 mt-4 -mx-4 -mb-4 transition">More info <i class="fa-solid fa-circle-arrow-right ml-1"></i></a>
                     </div>
 
                     <!-- Unique Visitors -->
