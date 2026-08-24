@@ -1,5 +1,5 @@
 <?php
-
+#cast
 namespace App\Http\Controllers;
 
 use App\Models\Cast; // Wajib diimpor agar tidak error "not found"
